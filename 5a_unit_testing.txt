@@ -66,6 +66,3 @@ def run_tests():
             print(f"  Expected: {case['expected']}, Got: {actual_dominant}\n")
 
     print(f"=== Test Summary: {passed_counts}/{len(test_cases)} Passed ===")
-
-    if __name__ == "__main__":
-        run_tests()
