@@ -14,7 +14,7 @@ def emotion_detector(text_to_analyze):
     dominant_emotion = max(emotions, key=emotions.get)
 
 
-    # Check the status code for blank entries
+    # Error handling for blank entries or invalid requests (Status Code 400)
     if response.status_code == 400:
         return {
             'anger': None,
