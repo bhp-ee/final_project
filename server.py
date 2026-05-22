@@ -16,7 +16,8 @@ def server_emotion_detector():
         return "Invalid text! Please try again!"
     
     # Normal response format
-    return (
+    else: 
+        return(
         f"For the given statement, the system response is "
         f"'anger': {response['anger']}, 'disgust': {response['disgust']}, "
         f"'fear': {response['fear']}, 'joy': {response['joy']} and "
